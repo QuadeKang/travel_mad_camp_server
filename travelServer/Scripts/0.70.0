@@ -1,0 +1,52 @@
+Requirement already satisfied: fastapi[all] in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (0.108.0)
+Requirement already satisfied: pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from fastapi[all]) (2.5.3)
+Requirement already satisfied: starlette<0.33.0,>=0.29.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from fastapi[all]) (0.32.0.post1)
+Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from fastapi[all]) (4.9.0)
+Collecting email-validator>=2.0.0
+  Downloading email_validator-2.1.0.post1-py3-none-any.whl (32 kB)
+Collecting httpx>=0.23.0
+  Downloading httpx-0.26.0-py3-none-any.whl (75 kB)
+     ---------------------------------------- 75.9/75.9 kB 4.4 MB/s eta 0:00:00
+Collecting itsdangerous>=1.1.0
+  Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting jinja2>=2.11.2
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting orjson>=3.2.1
+  Downloading orjson-3.9.10-cp311-none-win_amd64.whl (135 kB)
+     -------------------------------------- 135.0/135.0 kB 7.8 MB/s eta 0:00:00
+Collecting pydantic-extra-types>=2.0.0
+  Downloading pydantic_extra_types-2.3.0-py3-none-any.whl (18 kB)
+Collecting pydantic-settings>=2.0.0
+  Downloading pydantic_settings-2.1.0-py3-none-any.whl (11 kB)
+Collecting python-multipart>=0.0.5
+  Downloading python_multipart-0.0.6-py3-none-any.whl (45 kB)
+     ---------------------------------------- 45.7/45.7 kB ? eta 0:00:00
+Requirement already satisfied: pyyaml>=5.3.1 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from fastapi[all]) (6.0.1)
+Collecting ujson!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0,>=4.0.1
+  Downloading ujson-5.9.0-cp311-cp311-win_amd64.whl (41 kB)
+     ---------------------------------------- 41.9/41.9 kB 2.0 MB/s eta 0:00:00
+Requirement already satisfied: uvicorn[standard]>=0.12.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from fastapi[all]) (0.25.0)
+Collecting dnspython>=2.0.0
+  Downloading dnspython-2.4.2-py3-none-any.whl (300 kB)
+     ------------------------------------- 300.4/300.4 kB 19.3 MB/s eta 0:00:00
+Requirement already satisfied: idna>=2.0.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from email-validator>=2.0.0->fastapi[all]) (3.6)
+Requirement already satisfied: anyio in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from httpx>=0.23.0->fastapi[all]) (4.2.0)
+Collecting certifi
+  Using cached certifi-2023.11.17-py3-none-any.whl (162 kB)
+Collecting httpcore==1.*
+  Downloading httpcore-1.0.2-py3-none-any.whl (76 kB)
+     ---------------------------------------- 76.9/76.9 kB ? eta 0:00:00
+Requirement already satisfied: sniffio in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from httpx>=0.23.0->fastapi[all]) (1.3.0)
+Requirement already satisfied: h11<0.15,>=0.13 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from httpcore==1.*->httpx>=0.23.0->fastapi[all]) (0.14.0)
+Collecting MarkupSafe>=2.0
+  Using cached MarkupSafe-2.1.3-cp311-cp311-win_amd64.whl (17 kB)
+Requirement already satisfied: annotated-types>=0.4.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi[all]) (0.6.0)
+Requirement already satisfied: pydantic-core==2.14.6 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi[all]) (2.14.6)
+Requirement already satisfied: python-dotenv>=0.21.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from pydantic-settings>=2.0.0->fastapi[all]) (1.0.0)
+Requirement already satisfied: click>=7.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from uvicorn[standard]>=0.12.0->fastapi[all]) (8.1.7)
+Requirement already satisfied: colorama>=0.4 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from uvicorn[standard]>=0.12.0->fastapi[all]) (0.4.6)
+Requirement already satisfied: httptools>=0.5.0 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from uvicorn[standard]>=0.12.0->fastapi[all]) (0.6.1)
+Requirement already satisfied: watchfiles>=0.13 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from uvicorn[standard]>=0.12.0->fastapi[all]) (0.21.0)
+Requirement already satisfied: websockets>=10.4 in c:\users\chane\documents\madcamp\travel_mad_camp_server\travelserver\lib\site-packages (from uvicorn[standard]>=0.12.0->fastapi[all]) (12.0)
+Installing collected packages: ujson, python-multipart, orjson, MarkupSafe, itsdangerous, dnspython, certifi, jinja2, httpcore, email-validator, pydantic-settings, pydantic-extra-types, httpx
+Successfully installed MarkupSafe-2.1.3 certifi-2023.11.17 dnspython-2.4.2 email-validator-2.1.0.post1 httpcore-1.0.2 httpx-0.26.0 itsdangerous-2.1.2 jinja2-3.1.2 orjson-3.9.10 pydantic-extra-types-2.3.0 pydantic-settings-2.1.0 python-multipart-0.0.6 ujson-5.9.0
