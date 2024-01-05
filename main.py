@@ -8,8 +8,8 @@ from datetime import datetime
 from starlette.templating import Jinja2Templates
 from fastapi_oauth_client import OAuthClient
 
-# 데이터베이스 URL 설정
-DATABASE_URL = "mysql+pymysql://root:6Aqpc374zmi!@localhost:3306/exampledb"
+# # 데이터베이스 URL 설정
+# DATABASE_URL = "mysql+pymysql://root:6Aqpc374zmi!@localhost:3306/exampledb"
 
 # FastAPI 앱 인스턴스 생성
 app = FastAPI()
@@ -35,16 +35,16 @@ kakao_client = OAuthClient(
     verify_uri="https://kapi.kakao.com/v1/user/access_token_info",
 )
 
-# Database 인스턴스 생성
-database = Database(DATABASE_URL)
+# # Database 인스턴스 생성
+# database = Database(DATABASE_URL)
 
-@app.on_event("startup")
-async def startup():
-    await database.connect()
+# @app.on_event("startup")
+# async def startup():
+#     await database.connect()
 
-@app.on_event("shutdown")
-async def shutdown():
-    await database.disconnect()
+# @app.on_event("shutdown")
+# async def shutdown():
+#     await database.disconnect()
 
 def get_oauth_client():
         return naver_client
