@@ -18,24 +18,24 @@ import mysql.connector
 import httpx
 
 # FastAPI 앱 인스턴스 생성
-app = FastAPI(host='192.249.19.234', port=80)
+app = FastAPI(host='', port=80)
 
 # 폴더 연결 설정
 app.mount("/public", StaticFiles(directory="public"), name="static")
 
 naver_client = OAuthClient(
-    client_id="i1sgslgPmM9xO83ouini",
-    client_secret_id="LNN4_mUjqD",
-    redirect_uri="http://172.10.7.33:80/callback_naver",
+    client_id="",
+    client_secret_id="",
+    redirect_uri="/callback_naver",
     authentication_uri="https://nid.naver.com/oauth2.0",
     resource_uri="https://openapi.naver.com/v1/nid/me",
     verify_uri="https://openapi.naver.com/v1/nid/verify",
 )
 
 kakao_client = OAuthClient(
-    client_id="4b51f31a22deca51dc8bf8be09fd8b73",
-    client_secret_id="03207fe4175a387a75045b014fa0f70c",
-    redirect_uri="http://172.10.7.33:80/callback_kakao",
+    client_id="",
+    client_secret_id="",
+    redirect_uri="/callback_kakao",
     authentication_uri="https://kauth.kakao.com/oauth",
     resource_uri="https://kapi.kakao.com/v2/user/me",
     verify_uri="https://kapi.kakao.com/v1/user/access_token_info",
@@ -623,7 +623,7 @@ async def search_places(latitude: float, longitude: float, keyword: str):
         "location": f"{latitude},{longitude}",
         "radius": 10000,  # 검색 반경 (미터 단위)
         "type": "lodging",
-        "key": "AIzaSyBOuSiefZ0cI-wwU2rWNkbWT38M2NrxJy4"
+        "key": ""
     }
 
 
