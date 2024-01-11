@@ -131,11 +131,11 @@ def naver_modified_info(user_info) :
 
 # 데이터베이스에 연결합니다.
 conn = mysql.connector.connect(
-    host='172.10.7.69',  # 데이터베이스 호스트
-    port='80',
-    user='chanelacy',  # 데이터베이스 사용자명
-    password='1234',  # 데이터베이스 비밀번호
-    database='sys'  # 접속하려는 데이터베이스 이름
+    host='',  # 데이터베이스 호스트
+    port='',
+    user='',  # 데이터베이스 사용자명
+    password='',  # 데이터베이스 비밀번호
+    database=''  # 접속하려는 데이터베이스 이름
 )
 
 @app.on_event("shutdown")
